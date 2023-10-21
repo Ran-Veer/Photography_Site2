@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    cursor: none;
+} */
+header{
+    min-width: 100%;
+    height: 100vh;
+    background: url(./Assets/bg3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ------------------------- Naigation Bar Start --------------- */
+nav{
+    /* border: 1px solid rgb(255, 221, 0); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    padding: .1rem 2rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 -2px 15px 2px rgba(238, 255, 0, 0.3);
+}
+/* ----------------- Nav Logo Start ------------------------ */
+nav .logo {
+    /* background-color: rgb(48, 255, 134); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .logo img{
+    width: 3.5rem;
+    cursor: pointer;
+}
+nav .logo h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1rem;
+    text-align: center;
+    cursor: default;
+    color: #eeff00;
+}
+nav .logo h2 span{
+    font-size: .9rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #E44236;
+    transition: .2s ease-in-out;
+    position: relative;
+}
+
+/* -------------- Photography Text Hover Effect Start ------------- */
+nav .logo h2 span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .15rem;
+    background:#E44236;
+    left: 0;
+    bottom: -.15rem;
+}
+nav .logo h2 span.logo_text::after{
+    transform: scale(0,1);
+    transition: transform .3s ease;
+}
+nav .logo h2 span.logo_text:hover::after{
+    transform: scale(1,1);
+}
+/* ------------  Photography Text Hover Effect End ------------------ */
+/* ---------------------- Nav Logo End ------------------------ */
+
+/* ------------ Navigation Menu Section Start -------------- */
+nav .nav_container{
+    /* border: 1px solid yellow; */
+    margin-left: 15rem;
+}
+nav .nav_container .nav_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+nav .nav_container .nav_menu li{
+    list-style: none;
+}
+nav .nav_container .nav_menu li a{
+    text-decoration: none;
+    /* border: 1px solid yellow; */
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-right:1.2rem ;
+    letter-spacing: 2px;
+    position: relative;
+    transition: .1s ease-in-out;
+}
+nav .nav_container .nav_menu li a.active{
+    border-bottom: 1px solid #E44236;
+    color: #eeff00;
+}
+nav .nav_container .nav_menu li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .15rem;
+    background:#eeff00;
+    left: 0;
+    bottom:-.1rem;
+}
+nav .nav_container .nav_menu li a.list::after{
+    transform: scale(0,1);
+    transition: transform .3s ease;
+}
+nav .nav_container .nav_menu li a.list:hover::after{
+    transform: scale(1,1);
+}
+/* --------------- Navigation Bar End ------------------------- */
