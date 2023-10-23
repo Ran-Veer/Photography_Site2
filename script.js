@@ -9,7 +9,7 @@ list.forEach(element => {
 })
 
 // ------------- Typing Text Effect --------------
-var typed = new Typed(".typing_text",{
+var typed = new Typed(".typing_text" ,{
     strings:["Photographer","Videographer"],
     typeSpeed:100,
     backSpeed:100,

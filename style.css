@@ -132,3 +132,22 @@ nav .hamburger_menu i{
     display: none;
 }
 /* --------------- Navigation Bar End ------------------------- */
+
+/* ----------------- Typing Text ---------------- */
+header .title_text{
+    /* border: 1px solid #eeff00; */
+    display: inline-block;
+    margin: 8rem 0 0 12rem;
+}
+
+header .title_text h1{
+    color: #eeff00;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+header .title_text h1 span{
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
