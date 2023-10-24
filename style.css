@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/* font-family: 'Satisfy', cursive; */
 *{
     margin: 0;
     padding: 0;
@@ -8,9 +10,9 @@
     cursor: none;
 } */
 header{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(24, 24, 24, 0.5)), url(./Assets/bg3.jpg) no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -137,7 +139,7 @@ nav .hamburger_menu i{
 header .title_text{
     /* border: 1px solid #eeff00; */
     display: inline-block;
-    margin: 8rem 0 0 12rem;
+    margin: 8rem 0 0 14rem;
 }
 
 header .title_text h1{
@@ -145,11 +147,49 @@ header .title_text h1{
     font-size: 2.5rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    text-shadow:1px 1px 8px #ffffff;
+    text-shadow:0px 0px 6px #fdfdfd;
 }
 header .title_text h1 span{
     color: #ffffff;
     font-size: 2.4rem;
     font-weight: 500;
-    text-shadow:1px 1px 10px #eeff00;
+    text-shadow:0px 0px 8px #eeff00;
 }
+
+/* ---------------- Social Icons -------------- */
+header .social_icons{
+    /* border: 1px solid #000000; */
+    width: 28%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    gap: 8px;
+    margin: 1rem 0 0 1rem;
+    /* position: absolute; */
+    /* bottom: 11.5rem;
+    left: 1.2rem; */
+    border-radius: 10px;
+    /* background: rgba(238, 255, 0, 0.2); */
+    backdrop-filter: blur(10px);
+    box-shadow:  -6px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+header .social_icons a i{
+    color: #000000;
+    font-size: 1.7rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+header .social_icons .fa-facebook:hover{
+    color: #0866FF;
+}
+header .social_icons .fa-youtube:hover{
+    color: #FF0000;
+}
+header .social_icons .fa-whatsapp:hover{
+    color: #25D366;
+}
+header .social_icons .fa-instagram:hover{
+    color: #dd494e;
+}
+
