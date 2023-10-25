@@ -1,57 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Shadow Studio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ------------------ Header Section ------------------- -->
     <header>
-        <!---------------- Navigation Bar Section Start ------------------ -->
-        <nav>
-            <!---------- Logo ------------- -->
-            <div class="logo">
-                <a href="index.html"><img src="./Assets/logo.png" alt="logo_img"></a>
-                <h2>Shadow Studio<br><span class="logo_text">Photography</span></h2>
-            </div>
-            <!-------------- Navigation Bar Menu -->
-            <div class="nav_container">
-                <ul class="nav_menu">
-                    <li><a class="list active" href="#home">HOME</a></li>
-                    <li><a class="list" href="#gallery">GALLERY</a></li>
-                    <li><a class="list" href="#services">SERVICES</a></li>
-                    <li><a class="list" href="#contact">CONTACT US</a></li>
-                </ul>
-            </div>
-            <!------- Mobile Hamburger Menu ------------->
-            <div class="hamburger_menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
-        <!-------------- Navigation Bar Section End ---------------->
-        <div class="title_text">
-            <h1>I'm a <span class="typing_text"></span></h1>
-            <div class="title_description">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit voluptatibus architecto facere necessitatibus, laudantium voluptatem molestiae veniam porro ab.</h2>
-            </div>
-            <div class="call_btn">
-                <button><i class="fa-solid fa-phone"></i><a href="tel:+917870999767">Call Me</a></button>
-            </div>
+      <!---------------- Navigation Bar Section Start ------------------ -->
+      <nav>
+        <!---------- Logo ------------- -->
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./Assets/logo.png" alt="logo_img"
+          /></a>
+          <h2>Shadow Studio<br /><span class="logo_text">Photography</span></h2>
         </div>
-        <div class="social_icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <!-------------- Navigation Bar Menu -->
+        <div class="nav_container">
+          <ul class="nav_menu">
+            <li><a class="list active" href="#home">HOME</a></li>
+            <li><a class="list" href="#gallery">GALLERY</a></li>
+            <li><a class="list" href="#services">SERVICES</a></li>
+            <li><a class="list" href="#contact">CONTACT US</a></li>
+          </ul>
         </div>
+        <!------- Mobile Hamburger Menu ------------->
+        <div class="hamburger_menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <!-------------- Navigation Bar Section End ---------------->
+      <div class="title_text">
+        <h1>I'm a <span class="typing_text"></span></h1>
+        <div class="title_description">
+          <h2>
+            Capture your Every Moment With <span>Shadow Studio.</span> We Create The Memories That Last Forever.
+          </h2>
+        </div>
+        <div class="call_btn">
+          <button>
+            <i class="fa-solid fa-phone"></i
+            ><a href="tel:+917870999767">Call Me</a>
+          </button>
+        </div>
+      </div>
+      <div class="social_icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </header>
+    <!-- ------------ Swiper Section ------------- -->
+    <section id="gallery" class="gallery_section">
+        <div class="gallery_text">
+            <h2>Our Works</h2>
+        </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./Assets/img1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img8.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Assets/img6.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
     <!------------------------ Typing Text Js Script ------------------>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- ----------------------------------------------------------- -->
+    <!-- ------------ Swiper Js Script ------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- ------------------------------------------------ -->
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
