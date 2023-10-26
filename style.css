@@ -302,6 +302,7 @@ header .social_icons .fa-instagram:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-delay: .2s;
 }
 
 .swiper-slide img {
@@ -312,4 +313,141 @@ header .social_icons .fa-instagram:hover {
 }
 .swiper-button-next,.swiper-button-prev{
     color: #eeff00;
+}
+
+
+
+/* ------------ Responsive --------------- */
+
+/* ----------- 750px ---------- */
+@media only screen and (max-width:768px){
+  
+  header {
+    width: 100%;
+    min-height: 18rem;
+    background: url(./Assets/bg3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  nav .nav_container {
+    display: none;
+  }
+  nav .hamburger_menu i {
+    display:block;
+  }
+  nav .logo img {
+    width: 1.5rem;
+    cursor: pointer;
+  }
+  nav .logo h2 {
+    font-size: .8rem;
+    line-height: .9rem;
+  }
+  nav .logo h2 span {
+    font-size: 0.7rem;
+  }
+ 
+  header .title_text {
+    /* border: 1px solid #eeff00; */
+    /* display: inline-block; */
+    margin: 2rem 0 0 2rem;
+    width: 70%;
+  }
+  
+  header .title_text h1 {
+    font-size: 1rem;
+  }
+  header .title_text h1 span {
+    font-size: 1.1rem;
+  }
+  .title_description h2 {
+    font-size: .7rem;
+  }
+  .call_btn button {
+    font-size: .8rem;
+  }
+  header .social_icons {
+    /* border: 1px solid #000000; */
+    width: 100%;
+    margin: 1rem 0 0 2rem;
+    text-align:left;
+    backdrop-filter: blur(0px);
+    box-shadow: none;
+  }
+  header .social_icons a i {
+    font-size: 1rem;
+  }
+}
+
+/* ------------ 600px To 900px ------------- */
+@media only screen and (min-width: 37.5rem) and (max-width: 56.25rem){
+  header {
+    width: 100%;
+    min-height: 18rem;
+    background: url(./Assets/bg3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  nav{
+    background-color: #9a0000;
+    padding: 0 .8rem;
+    justify-content:space-between;
+  }
+  nav .logo img {
+    width: 2.5rem;
+    cursor: pointer;
+  }
+  nav .logo h2 {
+    font-size: .9rem;
+    line-height: .9rem;
+  }
+  nav .logo h2 span {
+    font-size: 0.7rem;
+  }
+  nav .nav_container {
+    border: 1px solid yellow;
+    margin-left: 2rem;
+    display: none;
+  }
+  nav .nav_container .nav_menu {
+    gap: .8rem;
+  }
+  nav .nav_container .nav_menu li a {
+    font-size: .9rem;
+    margin-right: .6rem;
+  }
+  nav .hamburger_menu i {
+    display:block;
+  }
+  header .title_text {
+    /* border: 1px solid #eeff00; */
+    /* display: inline-block; */
+    margin: 4rem 0 0 8rem;
+    width: 60%;
+  }
+  
+  header .title_text h1 {
+    font-size: 1.5rem;
+  }
+  header .title_text h1 span {
+    font-size: 1.9rem;
+  }
+  .title_description h2 {
+    font-size: 1rem;
+  }
+  .call_btn button {
+    font-size: 1rem;
+  }
+  header .social_icons {
+    /* border: 1px solid #000000; */
+    width: 100%;
+    margin: 1rem 0 0 2rem;
+    text-align:left;
+    backdrop-filter: blur(0px);
+    box-shadow: none;
+  }
+  }
+  header .social_icons a i {
+    font-size: 1rem;
+  }
 }
