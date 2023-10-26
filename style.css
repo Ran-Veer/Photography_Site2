@@ -377,6 +377,26 @@ header .social_icons .fa-instagram:hover {
   header .social_icons a i {
     font-size: 1rem;
   }
+  .gallery_section {
+    width: 100%;
+    min-height: 100%;
+    border: 1px solid red;
+    background: url(./Assets/bgswiper.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .gallery_text{
+      padding: 1rem 0;
+  }
+  
+  .swiper {
+    width: 90%;
+    height: 15rem;
+    margin: 1rem auto;
+    border: 1px solid red;
+    border-radius: 10px;
+  }
 }
 
 /* ------------ 600px To 900px ------------- */
@@ -448,5 +468,12 @@ header .social_icons .fa-instagram:hover {
   }
   header .social_icons a i {
     font-size: 1rem;
+  }
+  .swiper {
+    width: 90%;
+    height: 15rem;
+    margin: 1rem auto;
+    border: 1px solid red;
+    border-radius: 10px;
   }
 }
