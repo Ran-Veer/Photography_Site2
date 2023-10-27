@@ -172,12 +172,11 @@ header .title_text h1 span {
 
 /* ---------------- Social Icons -------------- */
 header .social_icons {
-  /* border: 1px solid #000000; */
-  width: 100%;
-  text-align: center;
+  /* border: 1px solid #d70000; */
+  /* text-align: center; */
   margin: 12rem 0 0 2rem;
   padding: 0.2rem 8rem .2rem 0;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* backdrop-filter: blur(10px);
   box-shadow: -6px 5px 10px 5px rgba(0, 0, 0, 0.2); */
   cursor: none;
@@ -353,7 +352,7 @@ header .social_icons .fa-instagram:hover {
     background-color: #7a2626;
   }
   header {
-    width: 100%;
+    /* width: 100%; */
     min-height: 100%;
     background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
@@ -399,14 +398,28 @@ header .social_icons .fa-instagram:hover {
   }
   header .social_icons {
     /* border: 1px solid #000000; */
-    width: 100%;
-    margin: 1rem 0 0 2rem;
+    /* width: 100%; */
+    margin: 1rem 1rem 0 2rem;
+    padding: 0 0 .5rem 0;
     text-align:left;
     backdrop-filter: blur(0px);
     box-shadow: none;
   }
   header .social_icons a i {
     font-size: 1rem;
+  }
+  header .social_icons .address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header .social_icons .address h2{
+    font-size: .7rem;
+  }
+  header .social_icons .address i{
+    font-size: .8rem;
+    margin-right: .7rem;
   }
   .gallery_section {
     width: 100%;
@@ -433,7 +446,7 @@ header .social_icons .fa-instagram:hover {
 /* ------------ 600px To 900px ------------- */
 @media only screen and (min-width: 37.5rem) and (max-width: 56.25rem){
   header {
-    width: 100vw;
+    /* width: 100vw; */
     min-height: 18rem;
     background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
@@ -491,14 +504,22 @@ header .social_icons .fa-instagram:hover {
   }
   header .social_icons {
     /* border: 1px solid #000000; */
-    width: 100%;
-    margin: 1rem 0 0 2rem;
+    /* width: 100%; */
+    margin: 1rem 2rem 0 2rem;
+    padding: 0 0 .5rem 0;
     text-align:left;
     backdrop-filter: blur(0px);
     box-shadow: none;
   }
   header .social_icons a i {
     font-size: 1rem;
+  }
+  header .social_icons .address h2{
+    font-size: .8rem;
+  }
+  header .social_icons .address i{
+    font-size: .9rem;
+    margin-right: .7rem;
   }
   .swiper {
     width: 90%;
