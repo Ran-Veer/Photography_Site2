@@ -7,6 +7,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 /* body{
     cursor: none;
 } */
@@ -130,10 +133,12 @@ nav .nav_container .nav_menu li a.list::after {
 nav .nav_container .nav_menu li a.list:hover::after {
   transform: scale(1, 1);
 }
+nav .hamburger_menu{
+  display: none;
+}
 nav .hamburger_menu i {
   font-size: 1.5rem;
   color: #ffffff;
-  display: none;
 }
 /* --------------- Navigation Bar End ------------------------- */
 
@@ -321,18 +326,21 @@ header .social_icons .fa-instagram:hover {
 
 /* ----------- 750px ---------- */
 @media only screen and (max-width:768px){
-  
+  body{
+    background-color: #7a2626;
+  }
   header {
     width: 100%;
-    min-height: 18rem;
+    min-height: 100%;
     background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    /* border: 1px solid yellow; */
   }
   nav .nav_container {
     display: none;
   }
-  nav .hamburger_menu i {
+  nav .hamburger_menu{
     display:block;
   }
   nav .logo img {
@@ -380,7 +388,7 @@ header .social_icons .fa-instagram:hover {
   .gallery_section {
     width: 100%;
     min-height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: url(./Assets/bgswiper.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -394,7 +402,7 @@ header .social_icons .fa-instagram:hover {
     width: 90%;
     height: 15rem;
     margin: 1rem auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
   }
 }
@@ -402,7 +410,7 @@ header .social_icons .fa-instagram:hover {
 /* ------------ 600px To 900px ------------- */
 @media only screen and (min-width: 37.5rem) and (max-width: 56.25rem){
   header {
-    width: 100%;
+    width: 100vw;
     min-height: 18rem;
     background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
@@ -425,7 +433,7 @@ header .social_icons .fa-instagram:hover {
     font-size: 0.7rem;
   }
   nav .nav_container {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin-left: 2rem;
     display: none;
   }
@@ -436,7 +444,7 @@ header .social_icons .fa-instagram:hover {
     font-size: .9rem;
     margin-right: .6rem;
   }
-  nav .hamburger_menu i {
+  nav .hamburger_menu{
     display:block;
   }
   header .title_text {
@@ -473,7 +481,7 @@ header .social_icons .fa-instagram:hover {
     width: 90%;
     height: 15rem;
     margin: 1rem auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
   }
 }
