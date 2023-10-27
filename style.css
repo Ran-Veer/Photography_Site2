@@ -365,6 +365,9 @@ header .social_icons .fa-instagram:hover {
   nav .hamburger_menu{
     display:block;
   }
+  nav .hamburger_menu i{
+    color: #eeff00;
+  } 
   nav .logo img {
     width: 1.5rem;
     cursor: pointer;
@@ -483,6 +486,9 @@ header .social_icons .fa-instagram:hover {
   nav .hamburger_menu{
     display:block;
   }
+  nav .hamburger_menu i{
+    color: #eeff00;
+  } 
   header .title_text {
     /* border: 1px solid #eeff00; */
     /* display: inline-block; */
