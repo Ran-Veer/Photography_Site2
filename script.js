@@ -1,4 +1,5 @@
 
+// ------------- Active Class Toggle --------------
 const list = document.querySelectorAll(".list");
 // console.log(list)
 list.forEach(element => {
@@ -9,12 +10,12 @@ list.forEach(element => {
 })
 
 // ------------- Typing Text Effect --------------
-let typed = new Typed(".typing_text", {
-    strings: ["Photographer", "Videographer"],
-    typeSpeed: 100,
-    backSpeed: 80,
-    loop: true
-})
+// let typed = new Typed(".typing_text", {
+//     strings: ["Photographer", "Videographer"],
+//     typeSpeed: 100,
+//     backSpeed: 80,
+//     loop: true
+// })
 
 // ------------------- Swiper Js Section -----------------
 // var swiper = new Swiper(".mySwiper", {
@@ -29,10 +30,10 @@ let typed = new Typed(".typing_text", {
 //         clickable: true,
 //     },
 //     grabCursor: true,
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
+// navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+// },
 // });
 
 var swiper = new Swiper(".mySwiper", {
@@ -41,17 +42,17 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     coverflowEffect: {
-      rotate: 40,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+        rotate: 60,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
     },
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
     },
-    loop:true,
+    loop: true,
     // pagination: {
     //   el: ".swiper-pagination",
     // },
@@ -59,4 +60,7 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-  });
+});
+
+
+

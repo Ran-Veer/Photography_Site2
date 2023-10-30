@@ -7,192 +7,403 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-/* body{
-    cursor: none;
+.landing_page_wrapper{
+  background:url(./Assets/bgswiper.jpg);
+  height: 100vh;
+  /* background-attachment: fixed; */
+  /* clip-path: polygon(100% 0, 89% 24%, 80% 57%, 64% 80%, 45% 91%, 21% 97%, 0 100%, 0 0); */
+}
+.landing_page_wrapper .landing_page .logo_img{
+  /* background-color: yellow; */
+  padding: .5rem 0rem 0 2rem;
+}
+.heading_wrapper{
+ /* border: 1px solid yellow; */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+/* .landing_page_wrapper .landing_page .logo_img img{
+  width: 5rem;
 } */
-header {
-  width: 100%;
-  min-height: 100vh;
-  background: url(./Assets/bg3.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-/* ------------------------- Naigation Bar Start --------------- */
-nav {
-  /* border: 1px solid rgb(255, 221, 0); */
+.landing_page_wrapper .landing_page .card_wrapper{
+  /* border:1px solid  yellow; */
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  /* background-color: transparent;
-    backdrop-filter: blur(3px); */
-  padding: 0.2rem 2rem 0 2rem;
-  width: 100%;
-  /* position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 9999; */
-  /* box-shadow: 0 -4px 15px 2px rgba(238, 255, 0, 0.2); */
+  margin: -20rem -5rem 0rem 0rem;
 }
-/* ----------------- Nav Logo Start ------------------------ */
-nav .logo {
-  /* background-color: rgb(48, 255, 134); */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.title_text{
+  /* border:1px solid  yellow; */
+  margin: 10rem 0rem 0 5rem;
 }
-nav .logo img {
-  width: 3.5rem;
-  cursor: pointer;
+.landing_page_wrapper .landing_page .card_wrapper .circle1, .circle2{
+  /* background-color:transparent;
+  backdrop-filter: blur(10px); */
+  /* border: 1px solid yellow;
+  border-top: 1px solid red; */
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: inset 0 0 15px 2px #eeff00;
+  /* transition: .1s ease-in-out; */
+  /* animation: circle1 2s infinite; */
 }
-nav .logo h2 {
-  font-size: 1.2rem;
-  font-weight: 300;
-  font-family: "Poppins", sans-serif;
-  line-height: 1rem;
+@keyframes circle1{
+  0%{
+    transform: translateY(0px);
+    box-shadow: inset 0 0 15px 2px rgba(159, 220, 18, 0.1);
+  }
+  50%{
+    transform: translateY(10px);
+    box-shadow: inset 0 0 50px 2px rgba(238, 255, 0, 0.7);
+  }
+  100%{
+    transform: translateY(0px);
+    box-shadow: inset 0 0 15px 2px rgba(159, 220, 18, 0.1);
+  }
+}
+@keyframes circle2{
+  0%{
+    transform: translateY(0px);
+    box-shadow: inset 0 0 15px 2px rgba(159, 220, 18, 0.1);
+  }
+  50%{
+    transform: translateY(10px);
+    box-shadow: inset 0 0 50px 2px rgba(238, 255, 0, 0.7);
+  }
+  100%{
+    transform: translateY(0px);
+    box-shadow: inset 0 0 15px 2px rgba(159, 220, 18, 0.1);
+  }
+}
+.landing_page_wrapper .landing_page .card_wrapper .circle1{
+  position: absolute;
+  top: 1rem;
+  right: 8rem;
+  z-index: 1;
+  animation: circle1 3s infinite;
+}
+.landing_page_wrapper .landing_page .card_wrapper .circle2{
+  position: absolute;
+  top: 24.6rem;
+  right:25.7rem;
+  z-index: 1;
+  animation: circle2 3s infinite;
+}
+.landing_page_wrapper .landing_page .card_wrapper .rectangle{
+  backdrop-filter: blur(15px);
+  background: transparent;
+  height:25rem;
+  width: 19rem;
+  border-radius: 15px;
   text-align: center;
+  position: absolute;
+  top: 4.3rem;
+  right: 11rem;
+  z-index: 2;
+  box-shadow: -1px -1px 15px 2px rgba(255, 255, 255, 0.3);
+}
+.landing_page_wrapper .landing_page .card_wrapper .rectangle>.swiper{
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* .landing_page_wrapper .landing_page .card_wrapper .rectangle>.swiper>.swiper-wrapper>.swiper-slide img{
+  width: 18rem;
+  height: 25rem;
+} */
+
+.Landing_adress{
+  /* background-color: yellow; */
+  width: 18rem;
+  padding: .5rem .1rem .5rem 1rem;
+  border-radius: 15px;
+  box-shadow:inset 0 0 15px 1px rgba(255, 255, 255, 0.1);
   cursor: default;
+  margin: 5rem 0rem 0 5rem ;
+  
+}
+.Landing_adress .loca{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: .5rem 0 0 0;
+}
+.Landing_adress .loca i{
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.Landing_adress .loca h2{
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   color: #eeff00;
 }
-nav .logo h2 span {
-  font-size: 0.9rem;
-  font-weight: 300;
-  font-family: "Poppins", sans-serif;
-  color: #e44236;
-  transition: 0.2s ease-in-out;
-  position: relative;
-}
-
-/* -------------- Photography Text Hover Effect Start ------------- */
-nav .logo h2 span::after {
-  content: "";
-  position: absolute;
+/* ------------------------------------ Header Section Start ------------------ */
+header {
+  background: url(./Assets/bgswiper.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 0.1rem;
-  background: #e44236;
+  min-height: 100vh;
+  /* background-attachment: fixed; */
+  /* border: .1px solid ; */
+}
+/* --------------------- Navigation Bar Section Start --------------------- */
+header nav {
+  /* background-color:transparent;
+  backdrop-filter: blur(20px); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0rem 0 2rem;
+  /* position: fixed;
+  top: 0;
+  right: 0;
   left: 0;
-  bottom: -0.15rem;
+  z-index: 1; */
 }
-nav .logo h2 span.logo_text::after {
-  transform: scale(0, 1);
-  transition: transform 0.3s ease;
+/* ---------------- Nav Logo Section Start ------------------------ */
+header nav .logo, .landing_page_wrapper .landing_page .logo_img {
+  /* border:1px solid #680b0b; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-nav .logo h2 span.logo_text:hover::after {
-  transform: scale(1, 1);
+header nav .logo img,.landing_page_wrapper .landing_page .logo_img img{
+  width: 3rem;
 }
-/* ------------  Photography Text Hover Effect End ------------------ */
-/* ---------------------- Nav Logo End ------------------------ */
+header nav .logo h2,.landing_page_wrapper .landing_page .logo_img h2{
+  /* border: 1px solid #b94444; */
+  color: #eeff00;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1rem;
+  cursor: default;
+}
+header nav .logo h2 span, .landing_page_wrapper .landing_page .logo_img h2 span{
+  font-size: 1rem;
+  color: #d90000;
+  font-weight: 400;
+  cursor: default;
+}
+/* ---------------- Nav Logo Section End ------------------------ */
 
-/* ------------ Navigation Menu Section Start -------------- */
-nav .nav_container {
-  /* border: 1px solid yellow; */
-  margin-left: 28rem;
+/* --------------- Nav Menu Section Start ------------------------- */
+header nav .nav_container {
+  /* border:1px solid #fff538; */
+  margin-right: 2rem;
 }
-nav .nav_container .nav_menu {
+header nav .nav_container .nav_menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.7rem;
 }
-nav .nav_container .nav_menu li {
+header nav .nav_container .nav_menu li {
   list-style: none;
 }
-nav .nav_container .nav_menu li a {
+header nav .nav_container .nav_menu li a {
   text-decoration: none;
-  /* border: 1px solid yellow; */
+  margin-right: 1rem;
   font-size: 1.1rem;
-  font-weight: 400;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  margin-right: 1.2rem;
-  letter-spacing: 2px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #fcfcfc;
   position: relative;
-  transition: 0.1s ease-in-out;
 }
-nav .nav_container .nav_menu li a.active {
-  border-bottom: 1px solid #e44236;
-  color: #eeff00;
-}
-nav .nav_container .nav_menu li a::after {
-  content: "";
+/* ---------- Underline Effect ------------------ */
+header nav .nav_container .nav_menu li a::after {
+  content: " ";
   position: absolute;
   width: 100%;
-  height: 0.15rem;
-  background: #eeff00;
-  left: 0;
+  height: 0.1rem;
   bottom: -0.1rem;
-}
-nav .nav_container .nav_menu li a.list::after {
+  left: 0;
+  background: #eeff00;
+  border-radius: 50px;
   transform: scale(0, 1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
-nav .nav_container .nav_menu li a.list:hover::after {
+header nav .nav_container .nav_menu li a:hover::after {
   transform: scale(1, 1);
 }
-nav .hamburger_menu{
+/* -------------------------------------------------------- */
+header nav .nav_container .nav_menu li a.active {
+  color: #eeff00;
+  border-bottom: 1px solid #d90000;
+}
+
+/* --------------- Nav Menu Section End------------------------- */
+
+/* ----------- Nav Hamburger Menu ---------------- */
+header nav .hamburger_menu {
+  background-color: #e88b49;
   display: none;
 }
-nav .hamburger_menu i {
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-/* --------------- Navigation Bar End ------------------------- */
+/* --------------------- Navigation Bar Section End --------------------- */
 
-/* ----------------- Typing Text ---------------- */
-header .title_text {
+/* ------------- Hero Section Start ------------------- */
+header .hero_container {
+  /* border: 1px solid #680b0b; */
+  /* margin: 5rem 0 0 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14rem;
+}
+header .hero_container .title_text {
   /* border: 1px solid #eeff00; */
-  /* display: inline-block; */
-  margin: 6rem 0 0 12rem;
-  backdrop-filter: blur(2px);
-  width: 50%;
-  border-radius: 10px;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 11rem 0 0 -18rem;
+  border-radius: 15px;
   box-shadow: inset 0 0 10px 2px rgba(238, 255, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
-
-header .title_text h1 {
+/* ------------- Typing Text Section Start ----------- ------------------- */
+header .hero_container .title_text h1 {
   color: #eeff00;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   text-shadow: 0px 0px 6px #fdfdfd;
   cursor: default;
 }
-header .title_text h1 span {
+
+header .hero_container .title_text h1 span {
   color: #ffffff;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 500;
   text-shadow: 0px 0px 8px #eeff00;
   cursor: default;
 }
+.landing_page_wrapper .landing_page .title_text .title_description h1 {
+  color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: default;
+  line-height: 1.9rem;
+  word-spacing: 0.1rem;
+}
+.landing_page_wrapper .landing_page .title_text .title_description h1 span {
+  color: #eeff00;
+  cursor: default;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+header .hero_container .title_text .call_btn button {
+  padding: 0.2rem 1rem;
+  margin: 0.5rem 0 0 0rem;
+  border-radius: 15px;
+  background-color: #eeff00;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: -1px -1px 10px 5px rgba(255, 255, 255, 0.2);
+}
+header .hero_container .title_text .call_btn button a {
+  text-decoration: none;
+  color: #000000;
+}
+header .hero_container .title_text .call_btn button i {
+  margin: 0 0.5rem 0 0;
+  animation: shake 2s infinite;
+}
 
-/* ---------------- Social Icons -------------- */
-header .social_icons {
-  /* border: 1px solid #d70000; */
-  /* text-align: center; */
-  margin: 12rem 0 0 2rem;
-  padding: 0.2rem 8rem .2rem 0;
-  /* border-radius: 20px; */
-  /* backdrop-filter: blur(10px);
-  box-shadow: -6px 5px 10px 5px rgba(0, 0, 0, 0.2); */
-  cursor: none;
-  animation: social 3s ease-in;
+@keyframes shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  5% {
+    transform: rotate(15deg);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* -------------- Typing Text Section End */
+
+/* --------------- Social Section Start ------------------ */
+header .hero_container .social_wrapper {
+  /* background-color: rgba(238, 255, 0, 0.334); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 0 5rem;
+  animation: social 3s ease-in-out;
 }
-header .social_icons .address{
+header .hero_container .social_wrapper .social_icons {
+  cursor: default;
+  /* border: 1px solid red; */
+  border-radius: 15px;
+  padding: 0.1rem;
+  box-shadow: inset -1px 0px 10px 1px rgba(238, 255, 0, 0.3);
+}
+header .hero_container .social_wrapper .social_icons a i {
+  color: #eeff00;
+  font-size: 1.4rem;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 0 4px;
+}
+header .hero_container .social_wrapper .social_icons .fa-facebook:hover {
+  color: #0866ff;
+}
+header .hero_container .social_wrapper .social_icons .fa-youtube:hover {
+  color: #ff0000;
+}
+header .hero_container .social_wrapper .social_icons .fa-whatsapp:hover {
+  color: #25d366;
+}
+header .hero_container .social_wrapper .social_icons .fa-instagram:hover {
+  color: #dd494e;
+}
+
+header .hero_container .social_wrapper .address {
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  padding: 0 0.5rem 0 0.5rem;
+  box-shadow: inset -1px 0px 10px 1px rgba(238, 255, 0, 0.3);
 }
-header .social_icons .address h2{
+header .hero_container .social_wrapper .address i {
+  color: #eeff00;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+header .hero_container .social_wrapper .address h2 {
   color: #eeff00;
   font-size: 1rem;
   font-weight: 400;
@@ -200,54 +411,32 @@ header .social_icons .address h2{
   text-shadow: 0px 0px 6px #fdfdfd;
   cursor: default;
 }
-header .social_icons .address i{
-  color: #eeff00;
-  font-size: 1.1rem;
-  margin-right: 1rem;
-}
-header .social_icons a i {
-  color: #eeff00;
-  font-size: 1.3rem;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-  margin: 0 4px;
-}
-header .social_icons .fa-facebook:hover {
-  color: #0866ff;
-}
-header .social_icons .fa-youtube:hover {
-  color: #ff0000;
-}
-header .social_icons .fa-whatsapp:hover {
-  color: #25d366;
-}
-header .social_icons .fa-instagram:hover {
-  color: #dd494e;
-}
 
-@keyframes social{
-    from{
-        opacity: 0;
-        transform: translate(0,10px);
-        filter: blur(10px);
-    } to{
-        opacity: 1;
-        transform: translate(0,0);
-        filter: blur(0px);
-    }
+@keyframes social {
+  from {
+    opacity: 0;
+    transform: translate(0, 10px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+    filter: blur(0px);
+  }
 }
+/* ---------------- Social Section End ------------- */
 
 .title_description h2 {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin: 1rem 0;
   cursor: default;
 }
-.title_description h2  span{
-    color: #eeff00;
-    cursor: default;
+.title_description h2 span {
+  color: #defb00;
+  cursor: default;
 }
 
 .call_btn button {
@@ -293,32 +482,30 @@ header .social_icons .fa-instagram:hover {
 }
 
 /* -------------------- Swiper Css Section ---------------- */
-.gallery_section {
+main #gallery{
+  background-color:rgb(178, 197, 8);
   width: 100%;
-  height: 100vh;
-  /* border: 1px solid red; */
-  background: url(./Assets/bgswiper.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 100%;
 }
 
-.gallery_text{
-    padding: 1rem 0;
+.gallery_text {
+  border: 2px solid red;
+  margin-top: .5rem;
 }
-.gallery_section h2{
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #eeff00;
-    text-align: center;
-    padding: .5rem 0 .5rem 0;
-    /* box-shadow: inset 0 0 10px 2px rgba(238, 255, 0, 0.4); */
+.gallery_section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #eeff00;
+  text-align: center;
+  padding: 0.3rem 0 0.3rem 0;
+  box-shadow: inset 0 0 10px 2px rgba(238, 255, 0, 0.4);
 }
 .swiper {
   width: 90%;
-  height: 80vh;
+  height: 60vh;
   margin: 1rem auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   border-radius: 10px;
 }
 
@@ -329,7 +516,7 @@ header .social_icons .fa-instagram:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
 
 .swiper-slide img {
@@ -338,26 +525,25 @@ header .social_icons .fa-instagram:hover {
   height: 100%;
   object-fit: cover;
 }
-.swiper-button-next,.swiper-button-prev{
-    color: #eeff00;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eeff00;
 }
-
-
 
 /* ------------ Responsive --------------- */
 
 /* ----------- 750px ---------- */
-@media only screen and (max-width:768px){
+/* @media only screen and (max-width:768px){
   body{
     background-color: #7a2626;
   }
   header {
-    /* width: 100%; */
+    width: 100%;
     min-height: 100%;
     background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
   }
   nav .nav_container {
     display: none;
@@ -381,8 +567,8 @@ header .social_icons .fa-instagram:hover {
   }
  
   header .title_text {
-    /* border: 1px solid #eeff00; */
-    /* display: inline-block; */
+    border: 1px solid #eeff00;
+    display: inline-block;
     margin: 2rem 0 0 2rem;
     width: 70%;
   }
@@ -400,8 +586,8 @@ header .social_icons .fa-instagram:hover {
     font-size: .8rem;
   }
   header .social_icons {
-    /* border: 1px solid #000000; */
-    /* width: 100%; */
+    border: 1px solid #000000;
+    width: 100%;
     margin: 1rem 1rem 0 2rem;
     padding: 0 0 .5rem 0;
     text-align:left;
@@ -427,7 +613,7 @@ header .social_icons .fa-instagram:hover {
   .gallery_section {
     width: 100%;
     min-height: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     background: url(./Assets/bgswiper.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -441,22 +627,22 @@ header .social_icons .fa-instagram:hover {
     width: 90%;
     height: 15rem;
     margin: 1rem auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border-radius: 10px;
   }
-}
+} */
 
 /* ------------ 600px To 900px ------------- */
-@media only screen and (min-width: 37.5rem) and (max-width: 56.25rem){
+/* @media only screen and (min-width: 37.5rem) and (max-width: 56.25rem){
   header {
-    /* width: 100vw; */
+    width: 100vw;
     min-height: 18rem;
     background: url(./Assets/bg3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
   }
   nav{
-    /* background-color: #9a0000; */
+    background-color: #9a0000;
     padding: 0 .8rem;
     justify-content:space-between;
   }
@@ -472,7 +658,7 @@ header .social_icons .fa-instagram:hover {
     font-size: 0.7rem;
   }
   nav .nav_container {
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     margin-left: 2rem;
     display: none;
   }
@@ -490,8 +676,8 @@ header .social_icons .fa-instagram:hover {
     color: #eeff00;
   } 
   header .title_text {
-    /* border: 1px solid #eeff00; */
-    /* display: inline-block; */
+    border: 1px solid #eeff00;
+    display: inline-block;
     margin: 4rem 0 0 8rem;
     width: 60%;
   }
@@ -509,8 +695,8 @@ header .social_icons .fa-instagram:hover {
     font-size: 1rem;
   }
   header .social_icons {
-    /* border: 1px solid #000000; */
-    /* width: 100%; */
+    border: 1px solid #000000;
+    width: 100%;
     margin: 1rem 2rem 0 2rem;
     padding: 0 0 .5rem 0;
     text-align:left;
@@ -531,7 +717,7 @@ header .social_icons .fa-instagram:hover {
     width: 90%;
     height: 15rem;
     margin: 1rem auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border-radius: 10px;
   }
-}
+} */
