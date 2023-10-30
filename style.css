@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 }
 .title_text{
   /* border:1px solid  yellow; */
-  margin: 10rem 0rem 0 5rem;
+  margin: 8rem 0rem 0 5rem;
 }
 .landing_page_wrapper .landing_page .card_wrapper .circle1, .circle2{
   /* background-color:transparent;
@@ -120,7 +120,30 @@ body::-webkit-scrollbar {
   width: 18rem;
   height: 25rem;
 } */
-
+.head_text h2{
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #e3e3e3;
+  /* animation: text 2s infinite; */
+}
+.head_text h2 span{
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #eeff00;
+}
+/* @keyframes text{
+  0%{
+    transform: translatex(0rem);
+  }
+  10%{
+    transform: translatex(-20rem);
+  }
+  20%{
+    transform: translatex(-200rem);
+  }
+} */
 .Landing_adress{
   /* background-color: yellow; */
   width: 18rem;
@@ -128,7 +151,7 @@ body::-webkit-scrollbar {
   border-radius: 15px;
   box-shadow:inset 0 0 15px 1px rgba(255, 255, 255, 0.1);
   cursor: default;
-  margin: 5rem 0rem 0 5rem ;
+  margin: 4rem 0rem 0 5rem ;
   
 }
 .Landing_adress .loca{
